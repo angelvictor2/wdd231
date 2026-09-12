@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="This is the home page for the course">
+    <meta name="author" content="Angel Eduardo Victor Escobedo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,700;1,400&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-    Proff it works
+    <header>
+        <img src="images/logo.svg" alt="Site logo"> 
+        <span>Angel Eduardo Victor Escobedo</span> 
+        <button id="menu"aria-label="Open navigation menu">☰</button>
+    </header>
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="index.html">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About me</h2>
+            <p>
+                My name is Angel, and I am a student at BYU-Idaho currently taking WDD 231.
+                This is my final course to earn my first certificate. I am from Guatemala,
+                a beautiful country in Central America. I have been working in sales for
+                at least eight years, and now I am getting used to the world of web
+                development and learning new skills to get a better job and provide a
+                better life for me and my family.
+            </p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/myphoto.webp" alt="Student Photo">
+
+        </section>
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+        
+            <div class="course-buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+        
+            <div id="course-list"></div>
+        
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>
+    </main>
+    <footer>
+    
+        <div class="social-links">
+            <a href="https://github.com/angelvictor2" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+    
+            <a href="https://www.linkedin.com/in/angel-victor" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkeding.svg" alt="LinkedIn">
+            </a>
+    
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebookk.svg" alt="Facebook">
+            </a>
+        </div>
+    
+        <p>&copy; <span id="currentyear"></span> Angel Eduardo Victor Escobedo, Guatemala city, Guatemala</p>
+        <p> <span id="lastModified">Last Modified: </span></p>
+    
+    </footer>
 </body>
 </html>

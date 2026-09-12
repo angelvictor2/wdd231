@@ -1,0 +1,252 @@
+
+:root {
+    --background-color: #F8F9FA;
+    --main-color: #006184;
+    --text-color: #263238;
+
+    --heading-font: "Lora", serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header span {
+    color: white;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--main-color);
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+.course-button {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.course-button.completed {
+    background-color: var(--main-color);
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    
+    header {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header span {
+        font-size: 1.3rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+
+    nav {
+        display: block;
+        background-color: var(--text-color);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+
+    main>section:nth-of-type(1) {
+        width: 68%;
+        float: left;
+        margin-right: 2%;
+
+    }
+
+    main>section:nth-of-type(2) {
+        width: 30%;
+        float: right;
+    }
+
+    main>section:nth-of-type(2) img {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main>section:nth-of-type(2) img {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 12px;
+        margin: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
+
+    .certificate {
+        clear: both;
+        padding-top: 1rem;
+    }
+
+   
+    .course-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .course-buttons button {
+        width: 100%;
+    }
+
+    
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .course-button {
+        width: 100%;
+        min-height: 45px;
+        margin: 0;
+    }
+
+    
+    footer {
+        clear: both;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .social-links {
+        gap: 20rem;
+        background-color: white;
+    }
+
+    .social-links img {
+        width: 45px;
+        height: 45px;
+    }
+}
