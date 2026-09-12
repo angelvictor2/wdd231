@@ -1,7 +1,7 @@
 
 :root {
     --background-color: #F8F9FA;
-    --main-color: #006184;
+    --main-color: #005979;
     --text-color: #263238;
 
     --heading-font: "Lora", serif;
@@ -98,6 +98,7 @@ footer {
 .social-links img {
     width: 30px;
     height: 30px;
+
 }
 
 nav {
